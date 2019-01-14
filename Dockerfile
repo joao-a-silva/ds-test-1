@@ -9,5 +9,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     pip3 install -r requirements.txt
 
-COPY dados_hands_on.csv .
-
+COPY ./bank bank/
+COPY ./bank-additional bank-additional/
+COPY Teste_Cientista.docx Teste_Cientista.docx
+COPY teste_cientista_tailorit.ipynb teste_cientista_tailorit.ipynb 
